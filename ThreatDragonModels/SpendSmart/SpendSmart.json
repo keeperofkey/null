@@ -41,8 +41,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "cb8913ce-4b67-431d-88d3-0648cd206701",
             "zIndex": 1,
+            "id": "cb8913ce-4b67-431d-88d3-0648cd206701",
             "data": {
               "type": "tm.Store",
               "name": "Credit Card Info",
@@ -82,11 +82,243 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "da7d0880-60df-4ca7-b059-52d6d963b205",
             "zIndex": 2,
+            "id": "da7d0880-60df-4ca7-b059-52d6d963b205",
             "data": {
               "type": "tm.Store",
               "name": "Utilities Info",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": true,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": true,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 630,
+              "y": 298
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Web\nServer"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "e8587a53-1692-4f2d-a53d-32300133cdfd",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "Web\nServer",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "da51a266-7449-4e1b-bd49-3e8312c93c5e",
+            "source": {
+              "cell": "e8587a53-1692-4f2d-a53d-32300133cdfd"
+            },
+            "target": {
+              "cell": "da7d0880-60df-4ca7-b059-52d6d963b205"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "081633fc-c439-4833-aede-74739a10084c",
+            "source": {
+              "cell": "e8587a53-1692-4f2d-a53d-32300133cdfd"
+            },
+            "target": {
+              "cell": "cb8913ce-4b67-431d-88d3-0648cd206701"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "bf3345dc-d1d9-4f49-bba2-b2a6c2522799",
+            "source": {
+              "cell": "e8587a53-1692-4f2d-a53d-32300133cdfd"
+            },
+            "target": {
+              "cell": "6dbd41ba-7826-4681-b577-68f7ac319cb3"
+            }
+          },
+          {
+            "position": {
+              "x": 352.9999999999999,
+              "y": 230
+            },
+            "size": {
+              "width": 130,
+              "height": 160
+            },
+            "attrs": {
+              "text": {
+                "text": "SpendSmart"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "ae28f3ed-a7f3-4146-854b-28481ef0b2b1",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "SpendSmart",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 357.9999999999999,
+              "y": 476
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Databse"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "6dbd41ba-7826-4681-b577-68f7ac319cb3",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "Databse",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
