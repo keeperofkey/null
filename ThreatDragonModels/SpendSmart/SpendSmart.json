@@ -120,8 +120,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "e8587a53-1692-4f2d-a53d-32300133cdfd",
             "zIndex": 3,
+            "id": "e8587a53-1692-4f2d-a53d-32300133cdfd",
             "data": {
               "type": "tm.Process",
               "name": "Web\nServer",
@@ -274,8 +274,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "ae28f3ed-a7f3-4146-854b-28481ef0b2b1",
             "zIndex": 11,
+            "id": "ae28f3ed-a7f3-4146-854b-28481ef0b2b1",
             "data": {
               "type": "tm.Process",
               "name": "SpendSmart",
@@ -314,8 +314,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "6dbd41ba-7826-4681-b577-68f7ac319cb3",
             "zIndex": 12,
+            "id": "6dbd41ba-7826-4681-b577-68f7ac319cb3",
             "data": {
               "type": "tm.Store",
               "name": "Databse",
