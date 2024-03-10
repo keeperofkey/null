@@ -145,7 +145,7 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
-                  "score": ""
+                  "score": "7"
                 }
               ]
             }
@@ -568,6 +568,9 @@
               ]
             },
             "id": "bf3345dc-d1d9-4f49-bba2-b2a6c2522799",
+            "labels": [
+              "parse and normalize data"
+            ],
             "source": {
               "cell": "e8587a53-1692-4f2d-a53d-32300133cdfd"
             },
@@ -587,9 +590,6 @@
                 "x": 560,
                 "y": 480
               }
-            ],
-            "labels": [
-              "parse and normalize data"
             ]
           },
           {
@@ -657,14 +657,14 @@
                   "id": "9857aafb-7d0f-4a71-b0b3-fdefeaf9e801",
                   "title": "Privilage",
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "type": "Elevation of privilege",
                   "description": "Attacker could utilize vulnerabilities, misconfiguration, malware, or social engineering to modify privileges and gain full access to the system ",
                   "mitigation": "Enforce least privilege and monitor privileged sessions  ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 15,
-                  "score": ""
+                  "score": "8"
                 }
               ]
             }
@@ -767,7 +767,7 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 12,
-                  "score": ""
+                  "score": "7"
                 }
               ]
             }
@@ -815,7 +815,7 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 4,
-                  "score": "5"
+                  "score": "7"
                 },
                 {
                   "id": "6c5bc1b9-769b-4804-a654-1db2af187534",
@@ -908,8 +908,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "e9bab261-5778-4a92-9c24-45d82074b5ad",
             "zIndex": 16,
+            "id": "e9bab261-5778-4a92-9c24-45d82074b5ad",
             "data": {
               "type": "tm.Store",
               "name": "Logs",
