@@ -2,8 +2,8 @@
   "version": "2.2.0",
   "summary": {
     "title": "SpendSmart",
-    "owner": "",
-    "description": "",
+    "owner": "Liam Dodd",
+    "description": "SpendSmart is a digital budgeting app that integrates personal financial information from various sources to provide a seamless and secure way to manage finances.",
     "id": 0
   },
   "detail": {
