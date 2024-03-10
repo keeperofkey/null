@@ -136,7 +136,7 @@
               "threats": [
                 {
                   "id": "c47e085c-aa28-45db-b4d9-3bc270828f07",
-                  "title": "New STRIDE threat",
+                  "title": "AtiM PtC",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
@@ -576,8 +576,8 @@
             },
             "vertices": [
               {
-                "x": 600,
-                "y": 430
+                "x": 610,
+                "y": 410
               },
               {
                 "x": 590,
@@ -629,7 +629,7 @@
               "threats": [
                 {
                   "id": "588c4883-e91a-42ee-af8a-44cf0458bf6d",
-                  "title": "New STRIDE threat",
+                  "title": "Code injection",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
@@ -638,11 +638,11 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 9,
-                  "score": ""
+                  "score": "7"
                 },
                 {
                   "id": "187a9eb9-5dd7-43a3-ac24-8931d3d7304e",
-                  "title": "New STRIDE threat",
+                  "title": "XSS",
                   "status": "Open",
                   "severity": "High",
                   "type": "Denial of service",
@@ -651,6 +651,19 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 10,
+                  "score": "8"
+                },
+                {
+                  "id": "9857aafb-7d0f-4a71-b0b3-fdefeaf9e801",
+                  "title": "Privilage",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Attacker could utilize vulnerabilities, misconfiguration, malware, or social engineering to modify privileges and gain full access to the system ",
+                  "mitigation": "Enforce least privilege and monitor privileged sessions  ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
                   "score": ""
                 }
               ]
@@ -670,13 +683,11 @@
                 "text": "Database"
               },
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -690,7 +701,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isALog": false,
               "isEncrypted": true,
               "isSigned": false,
@@ -699,16 +710,16 @@
               "threats": [
                 {
                   "id": "2c003578-9dc4-477d-9fe8-22ef42573f83",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Low",
+                  "title": "Key Management",
+                  "status": "Mitigated",
+                  "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Loss of confidentially if keys or encryption is not configured properly",
                   "mitigation": "Audit encryption and ensure keys are not accessible to attackers",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
-                  "score": "3"
+                  "score": ""
                 }
               ]
             }
@@ -747,7 +758,7 @@
               "threats": [
                 {
                   "id": "e1b9203f-666b-4598-a631-4c4c31a3ba26",
-                  "title": "New STRIDE threat",
+                  "title": "Phishing",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
@@ -795,7 +806,7 @@
               "threats": [
                 {
                   "id": "64f94ad4-c162-4743-8644-e5e77147f561",
-                  "title": "New STRIDE threat",
+                  "title": "RBAC",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
@@ -808,7 +819,7 @@
                 },
                 {
                   "id": "6c5bc1b9-769b-4804-a654-1db2af187534",
-                  "title": "New STRIDE threat",
+                  "title": "Phishing",
                   "status": "Open",
                   "severity": "High",
                   "type": "Spoofing",
@@ -859,16 +870,16 @@
               "threats": [
                 {
                   "id": "9b6a353d-f661-4738-bc82-70a9e10806f6",
-                  "title": "New STRIDE threat",
+                  "title": "SQL Injection",
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "type": "Information disclosure",
-                  "description": "SQL injection",
+                  "description": "users could use SQL injection to bypass authentication or access sensitive information",
                   "mitigation": "input sanitation",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 11,
-                  "score": ""
+                  "score": "8"
                 }
               ]
             }
@@ -914,7 +925,7 @@
               "threats": [
                 {
                   "id": "150c867e-e336-4690-a0b5-972d3b7babbb",
-                  "title": "New STRIDE threat",
+                  "title": "Change logs",
                   "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Tampering",
@@ -923,6 +934,19 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 13,
+                  "score": ""
+                },
+                {
+                  "id": "6603b0f0-97d3-493b-aafc-0aeda538b007",
+                  "title": "Responsiblity",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "If attackers gain access to logs it would be difficult to assign responsibility ",
+                  "mitigation": "restrict access and encrypt",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
                   "score": ""
                 }
               ]
@@ -933,6 +957,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 13
+    "threatTop": 15
   }
 }
